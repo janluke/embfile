@@ -13,9 +13,9 @@ Overview
     * - tests
       - | |travis| |appveyor| |codecov|
     * - package
-      - | |version|
-        | |supported-versions|
-        | |supported-implementations|
+      - | |supported-versions|
+{#        | |version|#}
+{#        | |supported-implementations|#}
 
 .. |docs| image:: https://readthedocs.org/projects/embfile/badge/?style=flat
     :target: https://readthedocs.org/projects/embfile
@@ -44,7 +44,6 @@ Overview
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/embfile.svg
     :alt: Supported implementations
     :target: https://pypi.org/project/embfile
-
 
 .. end-badges
 

@@ -15,7 +15,6 @@ include Makefile
 graft src
 graft tests
 graft scripts
-graft ci
 
 graft docs
 prune docs/_build
