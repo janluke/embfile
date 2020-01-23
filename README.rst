@@ -14,8 +14,6 @@ Overview
       - | |travis| |appveyor| |codecov|
     * - package
       - | |supported-versions|
-{#        | |version|#}
-{#        | |supported-implementations|#}
 
 .. |docs| image:: https://readthedocs.org/projects/embfile/badge/?style=flat
     :target: https://readthedocs.org/projects/embfile
