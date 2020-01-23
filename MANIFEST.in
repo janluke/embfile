@@ -1,7 +1,26 @@
-recursive-include benchmark *.py *.svg *.rst
+include AUTHORS.rst
+include CHANGELOG.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
 
-global-exclude *.py[cod]
-global-exclude __pycache__
-global-exclude .mypy_cache
-global-exclude *.so
-global-exclude *.dylib
+include .bumpversion.cfg
+include .coveragerc
+include .cookiecutterrc
+include .editorconfig
+
+include tox.ini .travis.yml .appveyor.yml
+include Makefile
+
+graft src
+graft tests
+graft scripts
+graft ci
+
+graft docs
+prune docs/_build
+
+graft benchmark
+prune benchmark/data
+
+global-exclude *.py[cod] __pycache__ *.so *.dylib
