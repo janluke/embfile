@@ -1,0 +1,10 @@
+
+.. csv-table:: 
+    :delim: ,
+    :header: ,1K,50K,150K,300K
+    :align: center
+    :widths: auto
+
+    ``BinaryEmbFile``,6.8,7.6,8.7,10.4
+    ``TextEmbFile``,6.2,11.3,21.4,36.3
+    ``VVMEmbFile``,1.7,3.4,5.4,8.1

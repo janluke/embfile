@@ -1,0 +1,11 @@
+sphinx
+better-apidoc
+sphinx-autodoc-typehints
+sphinx-autorun
+git+git://github.com/guzzle/guzzle_sphinx_theme.git
+#sphinx-rtd-theme
+sphinxcontrib_trio
+
+# for running the code in the examples
+ipython
+numpy

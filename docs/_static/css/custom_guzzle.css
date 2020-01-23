@@ -1,0 +1,123 @@
+
+@import url("../guzzle.css");
+
+/* TOC caption */
+.caption-text {
+    font-style: italic;
+}
+
+table caption {
+    font-style: italic;
+    padding: 0.5em;
+}
+
+/* Badges */
+.reference.external img {
+    padding: .15em .1em;
+}
+.line-block {
+    margin-bottom: 0;
+}
+
+/* Tables */
+table {
+    margin: 1em auto;
+    border: 0;
+    /*border-bottom: 1px solid #d0d0d0;*/
+    /*border-top: 1px solid #d0d0d0;*/
+    color: #323232;
+}
+
+td, th {
+    border: 1px solid #d0d0d0;
+    padding: 0.5em 1em;
+}
+
+thead {
+    color: #222;
+    /*font-variant: all-petite-caps;*/
+    font-size: 1em;
+    background: #fff;
+    border-bottom: 3px solid #d0d0d0;
+}
+
+tr {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.hlist {
+    margin: 0;
+    border: 0;
+}
+
+.hlist tr,
+.hlist td {
+    border: 0;
+}
+
+table.field-list {
+    border: 0;
+    margin: 0;
+    width: auto;
+}
+
+table.field-list li,
+table.field-list td,
+table.field-list tr,
+table.field-list th {
+    border: 0;
+    padding-bottom: .5em;
+}
+
+dl {
+    padding: 1em;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+dl:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.seealso dl {
+    border: 0;
+    padding: 1em;
+}
+
+/* Sphinx list-table (auto-summary) */
+.longtable {
+    margin: 1em 0;
+}
+
+.longtable td {
+    padding: 0.7em 0.5em;
+}
+
+li {
+    padding: 0.1em 0;
+}
+
+.footnote td, .footnote th, .footnote tr {
+    border: 0;
+}
+
+
+.rubric > .h2-no-toc {
+    font-family: "Source Serif Pro";
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.sidebar-toc p.caption {
+    margin: 15px 0 0 0;
+    padding: 0 25px;
+    align-content: center;
+}
+
+.sidebar-toc .caption-text {
+    font-variant: all-petite-caps;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #666;
+}

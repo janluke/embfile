@@ -1,0 +1,7 @@
+recursive-include analysis *.py *.svg *.rst
+
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude .mypy_cache
+global-exclude *.so
+global-exclude *.dylib
