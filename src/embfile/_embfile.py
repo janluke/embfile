@@ -80,8 +80,7 @@ def open(path: PathType,
     subclass; it can be more convenient since you get auto-completion and quick doc for
     format-specific arguments.
 
-    Example:
-    ::
+    Example::
 
         with embfile.open('path/to/embfile.txt') as f:
             # do something with f
@@ -99,24 +98,12 @@ def open(path: PathType,
     |                                 |           |            | vocab.txt, vectors.bin, meta.json |
     +---------------------------------+-----------+------------+-----------------------------------+
 
-    **Compressed files** are extracted in a temporary file which is automatically
-    deleted when the ``EmbFile`` is closed. Use :func:`embfile.extract` for extracting a file to a
-    permanent location. Supported compressions are:
-
-    .. hlist::
-        :columns: 2
-
-        - zip
-        - gzip
-        - bz2
-        - lzma (xz).
-
     You can **register new formats or extensions** using the functions
     :func:`embfile.register_format` and :func:`embfile.associate_extension`.
 
     Args:
         path:
-            path of the file
+            path to the file
 
         format_id:
             string ID of the embedding file format. If not provided, it is inferred from the
