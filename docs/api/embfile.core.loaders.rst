@@ -14,6 +14,7 @@ embfile.core.loaders
         RandomAccessLoader
         SequentialLoader
         VectorsLoader
+        Word2Vector
         
 
     

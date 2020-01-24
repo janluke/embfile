@@ -1,4 +1,4 @@
-__all__ = ['VectorsLoader', 'SequentialLoader', 'RandomAccessLoader']
+__all__ = ['VectorsLoader', 'SequentialLoader', 'RandomAccessLoader', 'Word2Vector']
 
 import abc
 from itertools import islice

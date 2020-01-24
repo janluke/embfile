@@ -171,7 +171,7 @@ class EmbFile(abc.ABC):
                 yield reader.current_vector
 
     def word_vectors(self) -> Iterable[WordVector]:
-        """ Returns an iterable for all the (word, vector) word_vectors in the file. """
+        """ Returns an iterable for all the (word, vector) pairs in the file. """
         with self.reader() as reader:
             for word in reader:
                 yield WordVector(word, reader.current_vector)
