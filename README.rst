@@ -45,25 +45,28 @@ Overview
 
 .. end-badges
 
-A package for reading/writing files containing word embeddings (aka word vectors)
-and building embedding matrices for initializing the ``Embedding`` layer of a deep
-learning model. Written for:
+A package for working with files containing word embeddings (aka word vectors).
+Written for:
 
-#. providing a format-independent interface
-#. providing a flexible function for building a "embedding matrix"
-#. taking as less RAM as possible
+#. providing a common interface for different file formats;
+#. providing a flexible function for building "embedding matrices" that you can use
+   for initializing the `Embedding` layer of your deep learning model;
+#. taking as less RAM as possible: no need to load 3M vectors like with
+   `gensim.load_word2vec_format` when you only need 20K;
 #. satisfying my (inexplicable) urge of writing a Python package.
 
 
 Features
 ========
-- Supports textual and Google (word2vec) binary format plus a custom format (vvm).
+- Supports textual and Google's binary format plus a custom convenient format (.vvm)
+  supporting constant-time access of word vectors (by word).
 
 - Allows to easily implement, test and integrate new file formats.
 
-- Supports virtually any text encoding and vector data type.
+- Supports virtually any text encoding and vector data type (though you should
+  probably use only UTF-8 as encoding).
 
-- Type-annotated and well-documented.
+- Well-documented and type-annotated (meaning great IDE support).
 
 - Extensively tested.
 
