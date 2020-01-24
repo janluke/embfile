@@ -14,8 +14,9 @@ lint: isort-check
 	mypy src tests
 	flake8 src tests
 
-.PHONY: sdist
+.PHONY: build
 build:
+	pip install --upgrade setuptools wheel twine
 	python setup.py clean --all sdist bdist_wheel
 
 .PHONY: check
@@ -23,12 +24,9 @@ check:
 	twine check dist/*
 
 .PHONY: upload
-upload:
-	twine register dist/*
-	twine upload --skip-existing dist/*.whl dist/*.gz dist/*.zip
+upload: check
+	twine upload --skip-existing dist/*.whl dist/*.gz
 
-.PHONY: upload-test
-upload-test:
-	twine register dist/*
-	twine upload --skip-existing dist/*.whl dist/*.gz dist/*.zip \
-	             --repository-url https://test.pypi.org/legacy/
+.PHONY: test-upload
+test-upload: check
+	twine upload -r testpypi --skip-existing dist/*.whl dist/*.gz
