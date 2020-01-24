@@ -22,8 +22,8 @@ setup(
     name='embfile',
     version='0.1.0',
     license='MIT license',
-    description=('A package for reading/writing/converting files containing pre-trained word '
-                 'vectors or, more in general, keyed vectors.'),
+    description=('A package for working with files containing pre-trained word '
+                 'embeddings (aka word vectors).'),
     long_description_content_type='text/x-rst',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
