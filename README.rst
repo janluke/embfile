@@ -19,9 +19,9 @@ Overview
     :target: https://readthedocs.org/projects/embfile
     :alt: Documentation Status
 
-.. |travis| image:: https://travis-ci.org/janLuke/embfile.svg?branch=master
+.. |travis| image:: https://travis-ci.com/janLuke/embfile.svg?branch=master
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/janLuke/embfile
+    :target: https://travis-ci.com/janLuke/embfile
 
 .. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/janLuke/embfile?branch=master&svg=true
     :alt: AppVeyor Build Status
