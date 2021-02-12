@@ -177,13 +177,11 @@ def run_apidoc(app):
     file_dir = os.path.abspath(os.path.dirname(__file__))
     better_apidoc.main([
         'better-apidoc',
-        '-t',
-        os.path.join(file_dir, '_templates', 'apidoc'),
+        '-t', os.path.join(file_dir, '_templates', 'apidoc'),
         '--force',
         '--no-toc',
         '--separate',
-        '-o',
-        os.path.join(file_dir, 'api'),
+        '-o', os.path.join(file_dir, 'api'),
         os.path.abspath(os.path.join(file_dir, '..', 'src', 'embfile')),
     ])
     # replace the title of the main api file from $(PACKAGE) to $(API_SECTION)
@@ -191,7 +189,7 @@ def run_apidoc(app):
     with open(api_srt_path) as f:
         lines = f.readlines()
     lines[0] = 'embfile API\n'
-    lines[1] = '=' * len(lines[0]) +  '\n'
+    lines[1] = '=' * len(lines[0]) + '\n'
     with open(api_srt_path, 'w') as fout:
         fout.writelines(lines)
 
