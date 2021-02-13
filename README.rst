@@ -9,9 +9,9 @@ Overview
     :widths: 1 4
 
     * - docs
-      - |docs|
+      - | |docs|
     * - tests
-      - | |travis| |appveyor| |codecov|
+      - | |tests-status| |codecov|
     * - package
       - | |supported-versions|
 
@@ -19,13 +19,9 @@ Overview
     :target: https://readthedocs.org/projects/embfile
     :alt: Documentation Status
 
-.. |travis| image:: https://travis-ci.com/janLuke/embfile.svg?branch=master
-    :alt: Travis-CI Build Status
-    :target: https://travis-ci.com/janLuke/embfile
-
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/janLuke/embfile?branch=master&svg=true
-    :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/janLuke/embfile
+.. |tests-status| image:: https://github.com/janLuke/embfile/workflows/Tests/badge.svg
+    :alt: Tests status
+    :target: https://github.com/janLuke/embfile/actions?query=workflow%3ATests
 
 .. |codecov| image:: https://codecov.io/github/janLuke/embfile/coverage.svg?branch=master
     :alt: Coverage Status
