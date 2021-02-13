@@ -1,9 +1,9 @@
 sphinx>=3.0
 better-apidoc
+six    # better-apidoc requires it but it doesn't list it (bug)
 sphinx-autodoc-typehints
 sphinx-autorun
-git+git://github.com/guzzle/guzzle_sphinx_theme.git
-#sphinx-rtd-theme
+guzzle_sphinx_theme
 sphinxcontrib_trio
 
 # for running the code in the examples

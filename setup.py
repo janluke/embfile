@@ -49,6 +49,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Utilities',
     ],
@@ -65,7 +66,15 @@ setup(
     test_require=[
         'pytest'
     ],
-    # extras_require={
-    #     'dev': []
-    # },
+    extras_require={
+        'dev': [
+            'tox',
+            'pytest',
+            'pytest-cov',
+            'coverage',
+            'flake8',
+            'mypy',
+            'twine',
+        ]
+    },
 )

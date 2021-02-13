@@ -171,7 +171,7 @@ autodoc_default_options = {
 
 
 def run_apidoc(app):
-    """Generage API documentation"""
+    """Generate API documentation"""
     import better_apidoc
     better_apidoc.APP = app
     file_dir = os.path.abspath(os.path.dirname(__file__))
