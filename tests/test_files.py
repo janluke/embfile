@@ -297,8 +297,11 @@ class TestVVMEmbFile(BaseTestEmbFile):
         path = tmp_path / 'embfile.vvm'
         if compression:
             path = Path(str(path) + default_compression_ext(compression))
-        VVMEmbFile.create(path, target_pairs, encoding=encoding, dtype=dtype,
-                          compression=compression, overwrite=True)
+
+        with pytest.warns(UserWarning if compression == 'zip' else None):
+            VVMEmbFile.create(path, target_pairs, encoding=encoding, dtype=dtype,
+                              compression=compression, overwrite=True)
+
         uncompressed_path = (embfile.extract(path, dest_dir=path.parent, overwrite=True)
                              if compression
                              else path)
