@@ -2,10 +2,8 @@ import numpy
 
 import embfile
 from tensorflow import keras
-from tensorflow.python.keras.layers import (
-    Embedding,
-    TextVectorizationV2 as TextVectorization,
-)
+from tensorflow.keras.layers import Embedding
+from tensorflow.keras.layers.experimental.preprocessing import TextVectorization
 
 
 # This is just for testing the script without a real file on disk
