@@ -4,16 +4,7 @@ Overview
 
 .. start-badges
 
-.. list-table::
-    :stub-columns: 1
-    :widths: 1 4
-
-    * - docs
-      - | |docs|
-    * - tests
-      - | |tests-status| |codecov|
-    * - package
-      - | |supported-versions|
+|tests-status| |codecov| |version| |supported-versions| |docs|
 
 .. |docs| image:: https://readthedocs.org/projects/embfile/badge/?style=flat
     :target: https://readthedocs.org/projects/embfile
@@ -93,11 +84,19 @@ Quick start
         # Like f.load() but allows missing words (and returns them in a Set)
         word2vec, missing_words = f.find(['ciao', 'hello', 'someMissingWord'])
 
-        # Build a matrix for initializing the Embedding layer either from
-        # an iterable of words or a dictionary {word: index}. Handle the
-        # initialization of eventual missing word vectors (see argument "oov_initializer")
+        # Build a matrix for initializing an Embedding layer either from
+        # a list of words or from a dictionary {word: index}. Handles the
+        # initialization of eventual missing word vectors (see "oov_initializer")
         matrix, word2index, missing_words = embfile.build_matrix(f, words)
 
+Examples
+========
+The examples shows how to use embfile to initialize the ``Embedding`` layer of
+a deep learning model. They are just illustrative, don't skip the documentation.
+
+- `Keras using Tokenizer <https://github.com/janLuke/embfile/blob/master/examples/keras_with_Tokenizer.py>`_
+- `Keras using TextVectorization <https://github.com/janLuke/embfile/blob/master/examples/keras_with_TextVectorization.py>`_
+  (tensorflow >= 2.1)
 
 .. if-doc-stop-here
 
