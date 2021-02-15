@@ -74,6 +74,7 @@ setup(
             'flake8',
             'mypy',
             'twine',
+            'bump2version',
         ]
     },
 )
