@@ -5,7 +5,7 @@ from embfile.compression import extract_if_missing
 from embfile.core import EmbFile
 from embfile.formats import BinaryEmbFile, TextEmbFile, VVMEmbFile
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 __all__ = [
     'open', 'build_matrix', 'BuildMatrixOutput',

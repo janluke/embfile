@@ -19,7 +19,7 @@ def read(*names, **kwargs):
 
 setup(
     name='embfile',
-    version='0.1.0',
+    version='0.1.1',
     license='MIT license',
     description=('A package for working with files containing pre-trained word '
                  'embeddings (aka word vectors).'),
