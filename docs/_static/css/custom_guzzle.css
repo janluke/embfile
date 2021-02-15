@@ -121,3 +121,7 @@ li {
     font-style: normal;
     color: #666;
 }
+
+ul.simple li p {
+    margin: 0;
+}
