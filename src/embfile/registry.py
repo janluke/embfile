@@ -16,12 +16,12 @@ class FormatsRegistry:
     """
     _TABLEFMT = 'simple'
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.id_to_class: Dict[str, Type[EmbFile]] = dict()
         self.extension_to_id: Dict[str, str] = dict()
         self.id_to_extensions: Dict[str, List[str]] = dict()
 
-    def __str__(self):
+    def __str__(self) -> str:
         rows = []
         for fid in self.id_to_class:
             classname = self.id_to_class[fid].__name__
@@ -33,7 +33,7 @@ class FormatsRegistry:
     def register_format(self, embfile_class: Type['EmbFile'],
                         format_id: str,
                         extensions: Iterable[str],
-                        overwrite: bool = False):
+                        overwrite: bool = False) -> None:
         """
         Registers a new embedding file format with a given id and associates the provided
         file extensions to it.
@@ -53,7 +53,9 @@ class FormatsRegistry:
         for ext in extensions:
             self.associate_extension(ext, format_id, overwrite)
 
-    def associate_extension(self, ext: str, format_id: str, overwrite: bool = False):
+    def associate_extension(
+        self, ext: str, format_id: str, overwrite: bool = False
+    ) -> None:
         """
         Associates a file extension to a registered embedding file format.
 

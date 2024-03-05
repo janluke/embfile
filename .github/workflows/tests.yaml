@@ -17,6 +17,9 @@ jobs:
           - { name: 'Python 3.7', tox: py37, python: '3.7' }
           - { name: 'Python 3.8', tox: py38, python: '3.8' }
           - { name: 'Python 3.9', tox: py39, python: '3.9' }
+          - { name: 'Python 3.10', tox: py310, python: '3.10' }
+          - { name: 'Python 3.11', tox: py311, python: '3.11' }
+          - { name: 'Python 3.12', tox: py312, python: '3.12' }
           - { name: 'Windows, Python 3.9',
               os: 'windows-latest',
               tox: py39, python: '3.9' }
@@ -37,7 +40,7 @@ jobs:
           python -m pip install -U pip
           pip install -U wheel
           pip install -U setuptools
-          pip install tox
+          pip install tox==3
 
       - name: Run tox -e ${{ matrix.tox }}
         run: tox -e ${{ matrix.tox }}

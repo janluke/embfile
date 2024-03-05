@@ -176,7 +176,7 @@ class EmbFile(abc.ABC):
             for word in reader:
                 yield WordVector(word, reader.current_vector)
 
-    def _maybe_progbar(self, iterable: Iterable, enable: bool = None, **kwargs):
+    def _maybe_progbar(self, iterable: Iterable, enable: Optional[bool] = None, **kwargs):
         return maybe_progbar(iterable, yes=coalesce(enable, self.verbose), **kwargs)
 
     def to_dict(self, verbose: Optional[bool] = None) -> Dict[str, VectorType]:

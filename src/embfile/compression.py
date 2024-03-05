@@ -40,7 +40,7 @@ class _ZippedFile:
     def __init__(self, path: PathType,
                  mode: str = 'r',
                  member: Optional[str] = None,
-                 encoding: str = None):
+                 encoding: Optional[str] = None) -> None:
 
         self.path = Path(path)
         self.mode = mode
@@ -54,7 +54,7 @@ class _ZippedFile:
             self._tmp_file = open(self._tmp_path, mode, encoding=encoding)
 
         elif self.zip_mode in ('w', 'x'):
-            self._zip_file = zipfile.ZipFile(self.path, mode=self.zip_mode)
+            self._zip_file = zipfile.ZipFile(str(self.path), mode=self.zip_mode)  # type: ignore
             self._tmp_path = tmp_dir / 'embfile_writing.tmp'
             self._tmp_file = open(self._tmp_path, mode, encoding=encoding)
             if member is None:

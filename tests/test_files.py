@@ -292,7 +292,9 @@ class TestVVMEmbFile(BaseTestEmbFile):
     CLS = VVMEmbFile
 
     @pytest.fixture
-    def pairs_and_file(self, recwarn, tmp_path, pairs_factory, encoding, dtype, compression) -> EmbFile:
+    def pairs_and_file(
+        self, recwarn, tmp_path, pairs_factory, encoding, dtype, compression
+    ) -> EmbFile:
         target_pairs = pairs_factory(encoding=encoding, dtype=dtype)
         path = tmp_path / 'embfile.vvm'
         if compression:
