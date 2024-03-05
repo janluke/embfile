@@ -5,6 +5,7 @@ sphinx-autodoc-typehints
 sphinx-autorun
 guzzle_sphinx_theme
 sphinxcontrib_trio
+Jinja2 < 3.1
 
 # for running the code in the examples
 ipython
