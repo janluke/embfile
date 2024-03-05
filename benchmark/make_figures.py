@@ -3,6 +3,7 @@ from pathlib import Path
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import seaborn as sns
 from common import (
     DEFAULT_METHOD,
     FIGURES_DIR,
@@ -11,7 +12,7 @@ from common import (
     get_summarization_method
 )
 
-plt.style.use('seaborn')
+sns.set_theme()
 
 mpl.rcParams['axes.titlesize'] = 13
 mpl.rcParams['axes.titlepad'] = 12

@@ -292,15 +292,16 @@ class TestVVMEmbFile(BaseTestEmbFile):
     CLS = VVMEmbFile
 
     @pytest.fixture
-    def pairs_and_file(self, tmp_path, pairs_factory, encoding, dtype, compression) -> EmbFile:
+    def pairs_and_file(self, recwarn, tmp_path, pairs_factory, encoding, dtype, compression) -> EmbFile:
         target_pairs = pairs_factory(encoding=encoding, dtype=dtype)
         path = tmp_path / 'embfile.vvm'
         if compression:
             path = Path(str(path) + default_compression_ext(compression))
 
-        with pytest.warns(UserWarning if compression == 'zip' else None):
-            VVMEmbFile.create(path, target_pairs, encoding=encoding, dtype=dtype,
-                              compression=compression, overwrite=True)
+        VVMEmbFile.create(path, target_pairs, encoding=encoding, dtype=dtype,
+                          compression=compression, overwrite=True)
+        if compression == 'zip':
+            recwarn.pop(UserWarning)
 
         uncompressed_path = (embfile.extract(path, dest_dir=path.parent, overwrite=True)
                              if compression

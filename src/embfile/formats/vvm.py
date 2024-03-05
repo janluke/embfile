@@ -190,7 +190,7 @@ class VVMEmbFile(EmbFile, Word2Vector):
         return VVMEmbFileReader(self, vectors_file)
 
     @overrides
-    def _loader(self, words: Iterable[str], missing_ok=True, verbose: Optional[bool] = None):
+    def _loader(self, words: Iterable[str], missing_ok=True, verbose: Optional[bool] = None) -> RandomAccessLoader:
         word2index = self.vocab
         index2vec = self._get_vectors_file_wrapper()
         word2vec = MappingComposition(word2index, index2vec)
