@@ -5,6 +5,6 @@
     :align: center
     :widths: auto
 
-    ``BinaryEmbFile``,6.8,7.6,8.7,10.4
-    ``TextEmbFile``,6.2,11.3,21.4,36.3
-    ``VVMEmbFile``,1.7,3.4,5.4,8.1
+    ``BinaryEmbFile``,1.4,1.5,1.8,2.0
+    ``TextEmbFile``,1.0,1.7,3.1,5.1
+    ``VVMEmbFile``,0.7,1.0,1.5,2.2

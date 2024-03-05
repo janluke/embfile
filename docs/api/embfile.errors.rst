@@ -1,20 +1,7 @@
-embfile.errors
-==============
-
-.. role:: h2-no-toc
-    :class: h2-no-toc
-
-.. currentmodule:: embfile.errors
+embfile.errors module
+=====================
 
 .. automodule:: embfile.errors
-    
-
-    
-
-    
-
-    
-
-
-    
-    .. rubric:: :h2-no-toc:`Reference`
+    :members:
+    :undoc-members:
+    :show-inheritance:

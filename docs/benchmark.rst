@@ -44,12 +44,10 @@ System used for tests
 ---------------------
 Tests were performed on an old desktop computer upgraded with a SSD:
 
-- **CPU:** Intel® Core™2 Quad Q6600
-- **RAM:** 8GB DDR2 (4 x 2GB, 800Mhz)
-- **SSD:** Samsung 850 EVO 256GB
-- **OS:** Windows 10
-
-Expect much better times on newer computers.
+- **CPU:** Intel® Core™ i5-10400 CPU @ 2.90GHz × 12
+- **RAM:** 2x8GiB DDR4 2667 MHz
+- **SSD:** Samsung SSD 980 1TB (2B4QFXO7)
+- **OS:** Ubuntu
 
 Results
 =======

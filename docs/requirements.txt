@@ -1,4 +1,4 @@
-sphinx>=3.0
+sphinx>=3.0,<4
 better-apidoc
 six    # better-apidoc requires it but it doesn't list it (bug)
 sphinx-autodoc-typehints

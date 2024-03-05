@@ -1,20 +1,7 @@
-embfile.registry
-================
-
-.. role:: h2-no-toc
-    :class: h2-no-toc
-
-.. currentmodule:: embfile.registry
+embfile.registry module
+=======================
 
 .. automodule:: embfile.registry
-    
-
-    
-
-    
-
-    
-
-
-    
-    .. rubric:: :h2-no-toc:`Reference`
+    :members:
+    :undoc-members:
+    :show-inheritance:
